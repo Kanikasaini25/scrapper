@@ -1,0 +1,63 @@
+version: "3"
+services:
+  urlscrapper:
+    image: urlscrapper
+    build: "urlscrapper/"
+    container_name: urlscrapper
+    environment:
+      - POST_IP=10.2.0.144
+      - PORT=8080
+      - USERNAME=admin
+      - PASSWORD=r1TaM@1234#
+    restart: always
+  newsscrapper:
+    image: newsscrapper
+    build: "newsscrapper/"
+    container_name: newsscrapper
+    environment:
+      - POST_IP=10.2.0.144
+      - PORT=8080
+      - USERNAME=admin
+      - PASSWORD=r1TaM@1234#
+    restart: always
+  Tweeter:
+    image: tweeter
+    build: "Tweeter/"
+    container_name: Tweeter
+    environment:
+      - POST_IP=10.2.0.144
+      - PORT=8080
+      - USERNAME=admin
+      - PASSWORD=r1TaM@1234#
+    restart: always
+  ritamdigitalscrapper:
+    image: ritamdigitalscrapper
+    build: "ritamdigitalscrapper/"
+    container_name: ritamdigitalscrapper
+    environment:
+      - POST_IP=10.2.0.144
+      - PORT=8080
+      - USERNAME=admin
+      - PASSWORD=r1TaM@1234#
+    restart: always
+  market:
+    image: market
+    build: "market/"
+    container_name: market
+    environment:
+      - POST_IP=10.2.0.144
+      - PORT=8080
+      - USERNAME=admin
+      - PASSWORD=r1TaM@1234#
+    restart: always
+  onlinecourse:
+    image: onlinecourse
+    build: "onlinecourse/"
+    container_name: onlinecourse
+    environment:
+      - POST_IP=10.2.0.144
+      - PORT=8080
+      - USERNAME=admin
+      - PASSWORD=r1TaM@1234#
+    restart: always
+
